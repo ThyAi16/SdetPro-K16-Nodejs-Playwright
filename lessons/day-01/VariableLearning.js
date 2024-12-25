@@ -10,4 +10,6 @@ a = 4;
 
 //Constant
 const PI_NUMBER = 3.14;
-PI_NUMBER = 3
+
+console.log(Number.MAX_VALUE);
+console.log(Number.MIN_VALUE);
