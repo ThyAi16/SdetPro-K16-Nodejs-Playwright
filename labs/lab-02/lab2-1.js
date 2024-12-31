@@ -17,7 +17,7 @@ if(BMI <18.5) {
     console.log(`Your weight is: ${BMI} -> Under weight`);
 }else if(BMI <= 24.9) {
     console.log(`Your weight is: ${BMI} -> Normal weight`);
-} else if(BMI >= 29.9) {
+} else if(BMI <= 29.9) {
     console.log(`Your weight is: ${BMI} -> Over weight`);
 } else {
     console.log(`Your weight is: ${BMI} -> Obesity`)
