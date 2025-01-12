@@ -14,3 +14,4 @@ console.log(`Sort merge array: ${sortMergeArrASC}`);
 function sortMergeArrASC( num1, num2) {
     return num1 - num2;
 }
+// Can you explain clearly when to declare variables as "const", "let", "var"? I'm not very clear about this.
