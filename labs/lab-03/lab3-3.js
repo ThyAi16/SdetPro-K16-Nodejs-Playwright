@@ -2,11 +2,43 @@
 // Input: [12, 34, 1, 16, 28]
 // Expected output: [1, 12, 16, 28, 34]
 
-const readline = require('readline-sync');
+let array = [12, 34, 1, 16, 28];
+let unsortedPosition = array.length - 1;
 
-function sortNumber(number1, number2) {  
-   return number1 - number2;
+//Methods 1:
+// for (; unsortedPosition > 0; unsortedPosition--) {
+//     for(let index = 0; index < unsortedPosition; index++) {
+//         const leftValue = array[index];
+//         const rightValue = array[index + 1];
+//         if (leftValue > rightValue) {
+//             swap(array, index);
+//         }
+//     }
+// }
+// console.log(array);
+
+// function swap(array, index) {
+//     let temp = array[index];
+//     array[index] = array[index + 1];
+//     array[index + 1] = temp;
+// }
+
+//Methods 2:
+while (unsortedPosition > 0) {
+    for(let index = 0; index < unsortedPosition; index++) {
+        const leftValue = array[index];
+        const rightValue = array[index + 1];
+        const isWrongPlace = leftValue > rightValue;
+        if (isWrongPlace) {
+            swap(array, index);
+        }
+    }
+    unsortedPosition--;
 }
-let inputNumber = Number(readline.question('Input Number: '));
-inputNumber.sort(sortNumber)
-console.log(`Sort number: ${inputNumber}`);
+console.log(array);
+
+function swap(array, index) {
+    let temp = array[index];
+    array[index] = array[index + 1];
+    array[index + 1] = temp;
+}
