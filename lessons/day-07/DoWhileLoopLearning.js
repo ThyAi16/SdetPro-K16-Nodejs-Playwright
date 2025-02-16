@@ -18,7 +18,8 @@ if(guessingTime === 3) {
     console.log("See u again!!!");
 }
 function getUserNumber() {
-    return Number(readline.question('Please enter your number: '));
+    return 3;
+    //return Number(readline.question('Please enter your number: '));
 }
 function generateRandomNumber() {
     return Math.floor(Math.random() * 10 + 1);
