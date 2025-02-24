@@ -1,9 +1,21 @@
-const todosEndpoint = 'https://jsonplaceholder.typicode.com/todos/1';
+const { todo } = require("node:test");
 
-console.log(fetch(todosEndpoint));
-fetch(todosEndpoint)
-    .then(getResponse)
-    .then(validateResponse);
+const todosEndpoint = 'https://jsonplaceholder.typicode.com/todos/1';
+//console.log(fetch(todosEndpoint));
+
+// fetch(todosEndpoint)
+//     .then(getResponse)
+//     .then(validateResponse);
+
+//Async await
+main();
+
+async function main() {
+    const rawResponse = await fetch(todosEndpoint);
+    const todo = await getResponse(rawResponse);
+    validateResponse(todo);
+    console.log('Done!!!');
+}
 
 // Details implementation
 function getResponse(rawResponse) {
@@ -17,5 +29,4 @@ function validateResponse(todo) {
     } else {
         console.log('Task is in progress');
     }
-
 }
