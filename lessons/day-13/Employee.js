@@ -1,3 +1,4 @@
+// OOP
 class Employee {
   constructor(name, salary) {
     this._name = name;
@@ -11,6 +12,7 @@ class Employee {
   set name(name) {
     this._name = name;
   }
+
   get salary() {
     return this._salary;
   }

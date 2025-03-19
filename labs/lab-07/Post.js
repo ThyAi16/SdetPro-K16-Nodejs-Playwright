@@ -10,6 +10,7 @@ class Post {
   get userId() {
     return this._userId;
   }
+
   //Setter
   set userId(userId) {
     this._userId = userId;
@@ -19,22 +20,27 @@ class Post {
   get id() {
     return this._id;
   }
+
   //Setter
   set id(id) {
     this._id = id;
   }
+
   //Getter
   get title() {
     return this._title;
   }
+
   //Setter
   set title(title) {
     this._title = title;
   }
+
   //Getter
   get body() {
     return this._body;
   }
+
   //Setter
   set body(body) {
     this._body = body;

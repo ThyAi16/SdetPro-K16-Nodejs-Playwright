@@ -1,6 +1,6 @@
-// User defined data
+// User - defined data
 class SalaryController {
-  //FP
+  // FP
   getTotalSalary(employList) {
     let totalSalary = 0;
     for (const employee of employList) {

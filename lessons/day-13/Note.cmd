@@ -2,7 +2,7 @@ FP - Functional Programing
 OOP - Object Oriented Programing - MINDSET ABOUT DESIGN
 
 -------
-- Java is a languege that support OOP
+- Java is a language that support OOP
 - From JS ES6, JS support OOP
 
 -------
@@ -21,3 +21,6 @@ OOP:
 //
 - WebDriver Protocol: Selenium, Appium, WebDriverIO
 - DevTool Protocol: Playwright, Cypress, Pupperteer
+
+// client(Java, python, JS) <--{header, body, ...}: WebdriveProtocol > Server (brower webDrive)
+
