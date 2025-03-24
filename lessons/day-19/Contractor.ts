@@ -6,6 +6,7 @@ export default class Contractor extends Employee {
   }
 
   setBonus(): void {
+    // Todo: provide detail implementation
     this.bonus = 0;
   }
 }

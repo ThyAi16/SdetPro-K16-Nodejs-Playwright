@@ -5,7 +5,11 @@ export default class FTE extends Employee {
     super(20 * 1000);
   }
 
-  protected setBonus(): void {
-    this.setBonus;
+  setBonus(): void {
+    this.bonus = 1 * 100;
   }
 }
+
+let ti = new FTE();
+ti.setBonus();
+console.log(ti.getBonus());
