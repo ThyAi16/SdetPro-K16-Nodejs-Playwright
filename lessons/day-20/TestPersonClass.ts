@@ -15,11 +15,11 @@ console.log(thy);
 // Protected: chia sẽ phạm vi truy cập cho lớp con
 
 // Access Modifiers:
-// 1. private: không có thể access vào được, chỉ trong nội bộ
+// 1. private: không có thể access vào được, chỉ trong nội bộ (cha)
 // 2. protected: chia sẽ phạm vi truy cập cho children
 // 3. pubic:
 
 // IS-Q relationship: Employee, Person (class cha) -> định ra khuôn mẫu, thiết kế IS-A relationship, để các controller phát sinh và k cần quy chiếu đến lớp con
 // -> dùng Abstract class, Normal class
 // Normal class: All properties are private, method: service method, support method
-// Class that í a template for IS-A relationship almost of the object properties are methods are protected
+// Class that is a template for IS-A relationship: almost of the object properties are methods are protected

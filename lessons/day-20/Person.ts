@@ -18,3 +18,5 @@ export default class Person {
 
 // Private: Properties "private name: string;" is private and accessible within class "Person"
 // Nếu Properties để private thì muốn dùng -> Sử sụng setName, setAge sẽ validate data
+// Support method: Hỗ trợ các phương thức khác trong cùng 1 class -> Private
+// Service method: -> Public
